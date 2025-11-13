@@ -28,8 +28,7 @@
 5. **Конец**
 
 ### Блок-схема 
-
-
+<img width="3604" height="4516" alt="image" src="https://github.com/user-attachments/assets/16eaf927-715a-4dc3-851b-604751f4f441" />
 
 
 ## 2. Реализация программы
@@ -65,7 +64,7 @@ int main()
         scanf(" %c", &choice);
         getchar();
 
-    } while (choice == '1' || choice == '1');
+    } while (choice == '1');
 
     printf("Программа завершена.\n");
     return 0;
