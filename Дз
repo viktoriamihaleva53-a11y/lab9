@@ -1,0 +1,37 @@
+#include <stdio.h>
+#include <locale.h>
+
+int main() 
+{
+    setlocale(LC_ALL, "RUS");
+    int size;
+    char symbol;
+    char choice;
+
+    do {
+        printf("Введите размер стороны квадрата: ");
+        scanf("%d", &size);
+        printf("Введите символ: ");
+        scanf(" %c", &symbol);
+
+        printf("\n");
+
+        for (int i = 0; i < size; i++) {
+            for (int j = 0; j < size; j++) {
+                if (i == 0 || i == size - 1 || j == 0 || j == size - 1) {
+                    printf("%c ", symbol);
+                } else {
+                    printf("  ");
+                }
+            }
+            printf("\n");
+        }
+        printf("\nХотите продолжить? (Да - введите 1, Нет - введите 0): ");
+        scanf(" %c", &choice);
+        getchar();
+
+    } while (choice == '1' || choice == '1');
+
+    printf("Программа завершена.\n");
+    return 0;
+}
